@@ -1,4 +1,13 @@
+import axios from "axios";
+import { useEffect } from "react";
+
 const SignInUser = () => {
+  useEffect(() => {
+    axios
+      .post("https://localhost:7256/api/login")
+      .then((res) => console.log(res));
+  }, []);
+
   return (
     <div className="bg-taupe min-w-screen min-h-screen">
       <div className="grid place-items-center h-screen">
