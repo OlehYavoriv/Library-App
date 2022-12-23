@@ -1,7 +1,7 @@
 import React from "react";
 import Avatar from "../../../assets/images/Avatar.png";
 
-function UserAccountInfo() {
+function UserAccountInfo(props) {
   return (
     <div className="flex items-center">
       <img
@@ -9,7 +9,7 @@ function UserAccountInfo() {
         src={Avatar}
         alt="Avatar"
       />
-      <p className="text-sage-green">John</p>
+      <p className="text-sage-green">{props.name}</p>
     </div>
   );
 }

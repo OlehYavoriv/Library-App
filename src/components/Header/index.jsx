@@ -68,7 +68,7 @@ const Header = () => {
             </div>
           </div>
           <div className="hidden space-x-2 md:inline-block">
-            <UserAccountInfo />
+            <UserAccountInfo name="UserId" />
           </div>
         </div>
       </nav>
