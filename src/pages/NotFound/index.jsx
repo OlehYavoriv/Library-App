@@ -10,7 +10,7 @@ const NotFoundPage = () => {
           <span className="text-red-500">Oh,</span> you seem to be lost ...
         </p>
         <p className="text-sm font-semibold text-sage-green underline">
-          <Link to="/">Go Back</Link>
+          <Link to="/home">Go Back</Link>
         </p>
       </div>
     </div>
