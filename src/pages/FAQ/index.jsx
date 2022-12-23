@@ -25,7 +25,7 @@ const FAQ = () => {
               </details>
             ))}
           </div>
-          <div class="w-full lg:w-1/2 px-4 py-2">
+          <div className="w-full lg:w-1/2 px-4 py-2">
             {globalAnswers.map((item, idx) => (
               <details className="mb-4" key={`FAQ- ${idx}`}>
                 <summary className="font-semibold  bg-taupe rounded-md py-2 px-4">
