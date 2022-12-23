@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-const FreeBook = ({ books }) => {
+const PaidBooksItem = ({ books }) => {
   const navigate = useNavigate();
 
   return (
@@ -22,6 +22,9 @@ const FreeBook = ({ books }) => {
         </div>
         <div className="px-4 py-4 text-sage-green">
           <h3 className="text-center text-bold mb-2">{books.title}</h3>
+          <p className="text-bold text-black text-center mb-2">
+            {books.price} $
+          </p>
           <div className="flex justify-between align-center">
             <p className="text-bold text-black">Author:</p>
             <p>{books.author}</p>
@@ -36,4 +39,4 @@ const FreeBook = ({ books }) => {
   );
 };
 
-export default FreeBook;
+export default PaidBooksItem;
